@@ -1,0 +1,29 @@
+{
+  "name": "rct-auth",
+  "version": "0.1.0",
+  "description": "auth component in react",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "precommit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write --bracketSpacing",
+      "git add"
+    ]
+  },
+  "keywords": [
+    "auth",
+    "react"
+  ],
+  "author": "GitNiko",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^0.13.4",
+    "lint-staged": "^4.0.0",
+    "prettier": "^1.4.4",
+    "webpack": "^2.6.1",
+    "webpack-dev-server": "^2.4.5"
+  }
+}
