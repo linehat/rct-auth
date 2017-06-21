@@ -11,7 +11,7 @@
   },
   "lint-staged": {
     "*.js": [
-      "prettier --write --bracketSpacing",
+      "prettier --write",
       "git add"
     ]
   },
