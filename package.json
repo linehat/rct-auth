@@ -1,10 +1,11 @@
 {
   "name": "rct-auth",
-  "version": "0.1.0",
+  "version": "0.5.0",
   "description": "auth component in react",
   "main": "index.js",
   "scripts": {
     "test": "jest",
+    "retest": "jest --updateSnapshot",
     "start": "webpack-dev-server",
     "dist": "webpack",
     "precommit": "lint-staged"

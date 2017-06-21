@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`render auth 1`] = `
+<div>
+  <h2>
+    Hello, niko2
+  </h2>
+</div>
+`;
