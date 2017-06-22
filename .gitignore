@@ -60,3 +60,4 @@ typings/
 # dist
 dist
 
+.DS_Store
