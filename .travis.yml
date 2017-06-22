@@ -1,0 +1,13 @@
+language: node_js
+
+sudo: false
+
+notifications:
+  email:
+  - lingjia@nongfenqi.com
+
+node_js:
+- 6.10.0
+
+install:
+  - npm install
