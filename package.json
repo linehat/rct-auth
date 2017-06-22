@@ -7,7 +7,7 @@
     "test": "jest",
     "retest": "jest --updateSnapshot",
     "start": "webpack-dev-server",
-    "dist": "webpack",
+    "build": "webpack --config webpack.prod.js",
     "precommit": "lint-staged"
   },
   "lint-staged": {
