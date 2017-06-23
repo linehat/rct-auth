@@ -2,8 +2,15 @@
 
 exports[`render auth 1`] = `
 <div>
-  <h2>
-    Hello, niko2
-  </h2>
+  <div>
+    <h2>
+      auth ok
+    </h2>
+  </div>
+  <div>
+    <h2>
+      no auth
+    </h2>
+  </div>
 </div>
 `;
