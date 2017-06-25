@@ -15,7 +15,7 @@ install:
 deploy:
   provider: npm
   email: "lingjia@nongfenqi.com"
-  api_key: ""
+  api_key: "secure: PT9W7WcVZompvlkOfHzzjJ71SUjeoy7yCJh76Hy7KKQdRLVSnlb+ohV1hbw24pWJyEb+6V0RNHxZE7T/f67GcPKzOvBMakbFtKizVmU+Pbz+XKl7gE6D4xwXMnGrQG2CCKmCGZ9JAUVkcHlgc+4rCaRFxmW/fCnfnKY5Fj4dHbeNETnmMgTxeFt0mqBRjGcS9WGbO1R98waP5s0b/SEAjbhIz5C1V+zih38MVhZC3IWYdgu21lGGk2frmzAPnZUfhkFb5XSVCJrBTBIhAZIxjOgltr0Tp3lJ/i3SmJGRErEoeAGnOyFhq4ogsn1ihKhz3RSjDMnCZks3hwtCMBwyMz1+OVcqzVrOunNZPUuh5AwBEuWIVMbojWq+byyE8CC2df5fmPisZFp8ZOEZ+VRYwumgra7y///4Nvqx3Y8IkkDGNzP5+JkWrNvNBkjqIhpJrtcE6rFm0gMKBnXq8a59RAurnOzFUbvH89thR405Nq+Lcm0+5BqRFBruY90hC31wBm5l6ewt/DQKmaShiyE0H62tjHE49fxhG/tYmCo5WzeEc0V87mnPGThY9QZ8SLBAzryEpUroGP/RVS+WYha/T2SipV3fc8GEGm/9IKF5BbJHc+tfAnNaqG8Z20MgD+Yvgw9TUfC6XfWIpLGMyhe3jvw+9fiYGfjXv5wRT1gaY7U="
   on:
     tags: true
 
