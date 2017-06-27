@@ -7,6 +7,8 @@ node_js:
 - 6.10.0
 install:
 - npm install
+before_deploy:
+  - npm run dist
 deploy:
   provider: npm
   email: galxis.ling@gmail.com
