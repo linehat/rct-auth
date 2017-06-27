@@ -1,6 +1,6 @@
 {
   "name": "rct-auth",
-  "version": "0.5.8",
+  "version": "0.5.9",
   "description": "auth component in react",
   "main": "dist/index.js",
   "scripts": {

@@ -8,7 +8,7 @@ node_js:
 install:
 - npm install
 before_deploy:
-  - npm run dist
+  - npm run build
 deploy:
   provider: npm
   email: galxis.ling@gmail.com
