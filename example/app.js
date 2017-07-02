@@ -12,6 +12,17 @@ const authFn = authId => {
 };
 const AuthDiv = authHOC(Div, authFn);
 
+class NamedComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { test: false };
+  }
+  render() {
+    return <div>this is named label</div>;
+  }
+}
+const AuthNamedComponent = authHOC(NamedComponent, authFn);
+
 export default class App extends React.Component {
   constructor(props) {
     super(props);
@@ -26,8 +37,6 @@ export default class App extends React.Component {
     });
   }
   render() {
-    console.log(React.isValidElement(React.createElement("div", null)));
-    console.log(AuthDiv.isReactComponent);
     return (
       <div>
         <h1>cached auth</h1>
@@ -38,6 +47,7 @@ export default class App extends React.Component {
         <AuthDiv authId={this.state.noAuth} noCached>
           <h2>will display in nocached</h2>
         </AuthDiv>
+        <AuthNamedComponent authId="3" />
       </div>
     );
   }
