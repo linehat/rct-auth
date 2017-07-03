@@ -17,6 +17,9 @@ class NamedComponent extends React.Component {
     super(props);
     this.state = { test: false };
   }
+  getName() {
+    return "inner name";
+  }
   render() {
     return <div>this is named label</div>;
   }
@@ -47,7 +50,10 @@ export default class App extends React.Component {
         <AuthDiv authId={this.state.noAuth} noCached>
           <h2>will display in nocached</h2>
         </AuthDiv>
-        <AuthNamedComponent authId="3" />
+        <AuthNamedComponent
+          authId="3"
+          innerRef={_ => console.log(_.getName())}
+        />
       </div>
     );
   }

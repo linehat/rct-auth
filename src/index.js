@@ -8,16 +8,20 @@ const authHOC = (WrapperComponent, fn) => {
     componentWillMount() {
       // cached the auth result
       this.isAuthed = fn(this.props.authId);
-      console.log(WrapperComponent.name);
     }
     render() {
+      const props = Object.assign(
+        {},
+        this.props,
+        this.props.innerRef ? { ref: this.props.innerRef } : {}
+      );
       if (this.props.noCached) {
         if (fn(this.props.authId)) {
-          return <WrapperComponent {...this.props} />;
+          return <WrapperComponent {...props} />;
         }
       } else {
         if (this.isAuthed) {
-          return <WrapperComponent {...this.props} />;
+          return <WrapperComponent {...props} />;
         }
       }
       return null;
