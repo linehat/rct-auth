@@ -53,12 +53,9 @@ export default class App extends React.Component {
         <AuthNamedComponent
           authId="3"
           noCached
-          innerRef={_ => console.log(_.getName())}
+          ref={_ => console.log(_.getName())}
         />
-        <AuthNamedComponent
-          authId="3"
-          innerRef={_ => console.log(_.getName())}
-        />
+        <AuthNamedComponent authId="3" ref={_ => console.log(_.getName())} />
       </div>
     );
   }
