@@ -44,12 +44,17 @@ export default class App extends React.Component {
       <div>
         <h1>cached auth</h1>
         <button onClick={this.changeAuthId}>change authId</button>
-        <AuthDiv authId="3"><h2>will display</h2></AuthDiv>
-        <AuthDiv authId={this.state.noAuth}><h2>will not display</h2></AuthDiv>
-        <h1>nocached auth</h1>
+        {/*<AuthDiv authId="3"><h2>will display</h2></AuthDiv>
+        <AuthDiv authId={this.state.noAuth}><h2>will not display</h2></AuthDiv>*/}
+        {/*<h1>nocached auth</h1>
         <AuthDiv authId={this.state.noAuth} noCached>
           <h2>will display in nocached</h2>
-        </AuthDiv>
+        </AuthDiv>*/}
+        <AuthNamedComponent
+          authId="3"
+          noCached
+          innerRef={_ => console.log(_.getName())}
+        />
         <AuthNamedComponent
           authId="3"
           innerRef={_ => console.log(_.getName())}
