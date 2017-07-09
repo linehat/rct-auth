@@ -10,7 +10,7 @@ const authFn = authId => {
   console.log(`authFn called with authid: ${authId}`);
   return _.includes(authDict, authId);
 };
-const AuthDiv = authHOC(Div, authFn);
+const AuthDiv = authHOC(authFn)(Div);
 
 class NamedComponent extends React.Component {
   constructor(props) {
@@ -24,7 +24,7 @@ class NamedComponent extends React.Component {
     return <div>this is named label</div>;
   }
 }
-const AuthNamedComponent = authHOC(NamedComponent, authFn);
+const AuthNamedComponent = authHOC(authFn)(NamedComponent);
 
 export default class App extends React.Component {
   constructor(props) {

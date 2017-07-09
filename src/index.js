@@ -2,8 +2,8 @@ import React from "react";
 
 const getDisplayName = Component =>
   Component.displayName || Component.name || "Component";
-// authHOC :: Component -> (fn -> bool) -> Component
-const authHOC = (WrapperComponent, fn) => {
+// authHOC ::  (fn -> bool) -> Component -> Component
+const authHOC = fn => WrapperComponent => {
   class Auth extends React.Component {
     componentWillMount() {
       // cached the auth result
