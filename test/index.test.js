@@ -5,7 +5,7 @@ import renderer from "react-test-renderer";
 
 it("render auth", () => {
   const Div = props => <div>{props.children}</div>;
-  const AuthDiv = authHOC(id => _.includes(["1", "2", "3"], id)(Div));
+  const AuthDiv = authHOC(id => _.includes(["1", "2", "3"], id))(Div);
   const tree = renderer
     .create(
       <div>
