@@ -50,7 +50,7 @@
     "webpack": "^2.6.1",
     "webpack-dev-server": "^2.4.5"
   },
-  "dependencies": {
+  "peerDependencies": {
     "react": "^15.6.1"
   }
 }
